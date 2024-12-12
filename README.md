@@ -47,18 +47,18 @@ To run this project locally, you'll need to have Docker installed to containeriz
 4. Check the Elasticsearch dashboard on http://localhost:9200 and Kibana on http://localhost:5601 for querying and visualizing the data.
 
 ## Folder Structure:
-project-m3/
-├── dags/
-│   ├── dag.py               # Main Airflow DAG
-├── plugins/
-│   ├── clean_data.py        # Data cleaning functionality
-│   ├── export_to_csv.py     # CSV export functionality
-│   ├── load_data.py         # Data loading functionality
-│   ├── post_to_elastic.py   # Posting data to Elasticsearch
-├── airflow_ES.yaml          # Docker Compose configuration
-├── gx.ipynb                 # Great Expectations validation notebook
-├── ddl.txt                  # DDL and DML scripts for PostgreSQL
-└── .gitignore               # Git ignore file
+project-m3/  
+├── dags/  
+│   ├── dag.py               # Main Airflow DAG  
+├── plugins/  
+│   ├── clean_data.py        # Data cleaning functionality  
+│   ├── export_to_csv.py     # CSV export functionality  
+│   ├── load_data.py         # Data loading functionality  
+│   ├── post_to_elastic.py   # Posting data to Elasticsearch  
+├── airflow_ES.yaml          # Docker Compose configuration  
+├── gx.ipynb                 # Great Expectations validation notebook  
+├── ddl.txt                  # DDL and DML scripts for PostgreSQL  
+└── .gitignore               # Git ignore file  
 
 Data Validation with Great Expectations
 This project integrates Great Expectations to validate the integrity of the dataset, ensuring that:
